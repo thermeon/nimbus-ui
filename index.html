@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mesos Cluster Launchpad - Thermeon.io</title>
+
+  <style type="text/css">
+  body, html {
+    font-family: sans-serif;
+    background: #E6E6E6;
+    color: #222;
+    text-align: center;
+  }
+  a {
+    color: #222;
+  }
+  a.block {
+    background: #eee;
+    text-decoration: none;
+    width: 10em;
+    height: 10em;
+    border: 1px solid #666;
+    border-radius: 0.5em;
+    display: block;
+    float: left;
+    margin: 5em 0.5em;
+  }
+  a.block:hover {
+    background: #fff;
+  }
+  .block img {
+    width: 5em;
+    height: 5em;
+    margin-top: 1.5em;
+  }
+  .wrap {
+    width: 45em;
+    margin: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a href=":8500" class="block">
+      <img src="consul.svg" alt="">
+      <p>consul</p>
+    </a>
+    <a href=":8080" class="block">
+      <img src="marathon.svg" alt="">
+      <p>marathon</p>
+    </a>
+    <a href=":5050" class="block">
+      <img src="mesos.svg" alt="">
+      <p>mesos-ui</p>
+    </a>
+    <a href=":5050" class="block">
+      <img src="mesosphere.svg" alt="">
+      <p>mesos</p>
+    </a>
+    </div>
+</body>
+</html>
