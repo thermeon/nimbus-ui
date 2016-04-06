@@ -58,6 +58,15 @@
       <img src="mesosphere.svg" alt="">
       <p>mesos</p>
     </a>
-    </div>
+  </div>
+   <script>
+    // Set links relative to current hostname
+    var links = document.getElementsByClassName('block');
+    for (var i = 0; i< links.length; i++){
+      var el = links[i];
+      var port = el.getAttribute('href');
+      el.href = window.location.protocol + '//' + window.location.hostname + port;
+    }
+   </script>
 </body>
 </html>
